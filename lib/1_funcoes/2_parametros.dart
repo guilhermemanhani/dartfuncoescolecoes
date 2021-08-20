@@ -8,6 +8,8 @@ void main() {
   print(somaDoubleDefault(numero2: 10, numero1: 20));
   print(somaInteirosOpcional(1, 1));
   print(somaInteirosOpcional(1));
+  parametrosNormaisComNomeados(1, nome: "nome", idade: 11);
+  parametrosNormaisComOpcional(1, null, 11);
 }
 
 int somaInteiros(int numero1, int numero2) {
@@ -38,4 +40,12 @@ double somaDoubleDefault({double numero1 = 0, double numero2 = 0}) {
 
 int somaInteirosOpcional([int numero1 = 0, int numero2 = 0]) {
   return numero1 + numero2;
+}
+
+void parametrosNormaisComNomeados(int numero, {required String nome, required int idade}) {
+
+}
+
+void parametrosNormaisComOpcional(int numero, [String? pai, int? idade]) {
+
 }
