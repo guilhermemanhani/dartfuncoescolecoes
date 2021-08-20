@@ -57,5 +57,5 @@ void main(){
     ]
   };
 
-  print(mapa['cursos'][0]);
+  print(mapa['cursos']);
 }
